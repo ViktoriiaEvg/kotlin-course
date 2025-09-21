@@ -1,7 +1,5 @@
 package org.example.lessons.lesson06.homework
 
-import java.time.temporal.Temporal
-
 fun main() {
     season(13)
     age(12)
