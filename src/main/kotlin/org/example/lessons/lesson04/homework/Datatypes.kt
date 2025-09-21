@@ -23,7 +23,7 @@ val v18: Set<String> = setOf("OpenAI", "Quantum Computing")
 val v19: Float = 5.75f
 //val v20: String = `1.414` – неправильные кавычки
 val v21: String = "Artificial Intelligence"
-//val v22: Array<String> = arrayOf('x', "A") – разные кавычки у элементов массива
+val v22: Array<Any> = arrayOf('x', "A")
 val v23: String = "Android Studio"
 val v24: Char = '@'
 val v25: Int = 1024
@@ -59,7 +59,7 @@ val queue: Double = 233424.234
 //5. Хранить факт, закрыт ли баг после того, как его просто переименовали в фичу.
 val usbugcloses: Boolean = false
 //6. Хранить количество свистков чайника за день.
-val whistles: Int = 4
+val whistles: Byte = 4
 //7. Хранить количество нажатий котом на клавиатуру ноутбука за всё время твоей работы.
 val catpresses: Int = 23
 //8. Хранить количество попыток пересчитать звёзды на небе за всю историю человечества.
