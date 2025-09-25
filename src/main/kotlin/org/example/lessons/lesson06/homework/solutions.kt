@@ -22,10 +22,16 @@ fun season(month: Int){
 }
 
 fun age(age: Int){
-    if (age <= 2){
-        println("Возраст равен: " +  age * 10.5)
-    } else {
-        println("Возраст равен: " + ((age - 2) * 4 + 10.5 * 2))
+    when (age) {
+        in 1..2 -> {
+            println("Dogs age is: " + age * 10.5)
+        }
+        in 3..99 -> {
+            println("Dogs age is: " + ((age - 2) * 4 + 10.5 * 2))
+        }
+        else -> {
+            println("Out of range")
+        }
     }
 }
 
@@ -39,7 +45,7 @@ fun move(distance: Int){
 }
 
 fun bonuses(total: Int){
-    if (total < 1000){
+    if (total in 1..1000){
         println("Bonuses added: " +  (total/100 * 2))
     } else if (total > 1000) {
         println("Bonuses added: " + (total/100 * 3))
